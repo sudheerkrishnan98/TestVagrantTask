@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Movie Information]">
+  <parameter name="IMDB Url" value="https://www.imdb.com/"/>
+  <parameter name="Wikipedia Url" value="https://en.wikipedia.org/"/>
+  <parameter name="Movie Name" value="Pushpa: The Rise"/>
+  <parameter name="Movie Search Name" value="Pushpa"/>
+  <parameter name="Country Origin" value="India"/>
+  <parameter name="Release Date" value="17 December 2021"/>
+  <test thread-count="5" name="MovieReleaseDateAndCountryOrigin(failed)">
+    <groups>
+      <run>
+        <include name="IMDB"/>
+        <include name="Wikipedia"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testvagrant.QaTask">
+        <methods>
+          <include name="getCountryOfOriginIMDB" invocation-numbers="0"/>
+          <include name="getReleaseInfoWikipedia" invocation-numbers="0"/>
+          <include name="getReleaseDateIMDB" invocation-numbers="0"/>
+          <include name="searchMovieInIMDB" invocation-numbers="0"/>
+          <include name="getCountryOriginWikipedia" invocation-numbers="0"/>
+          <include name="searchMovieInWikipedia" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testvagrant.QaTask -->
+    </classes>
+  </test> <!-- MovieReleaseDateAndCountryOrigin(failed) -->
+</suite> <!-- Failed suite [Movie Information] -->

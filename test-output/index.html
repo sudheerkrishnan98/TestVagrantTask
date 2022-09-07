@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Movie_Information">
+              <span class="suite-name border-passed">Movie Information</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Movie_Information">
+                    <span>F:\Javap\TestVagrant\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Movie_Information">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Movie_Information">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Movie_Information">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Movie_Information">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Movie_Information">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Movie_Information">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Movie_Information" class="hide-methods passed suite-Movie_Information"> (hide)</a> <!-- hide-methods passed suite-Movie_Information -->
+                      <a href="#" panel-name="suite-Movie_Information" class="show-methods passed suite-Movie_Information"> (show)</a> <!-- show-methods passed suite-Movie_Information -->
+                    </span>
+                    <div class="method-list-content passed suite-Movie_Information">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Movie_Information" title="com.testvagrant.QaTask" hash-for-method="getCountryOfOriginIMDB(India)">getCountryOfOriginIMDB(India)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Movie_Information" title="com.testvagrant.QaTask" hash-for-method="getCountryOriginWikipedia(India)">getCountryOriginWikipedia(India)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Movie_Information" title="com.testvagrant.QaTask" hash-for-method="getReleaseDateIMDB(17 December 2021)">getReleaseDateIMDB(17 December 2021)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Movie_Information" title="com.testvagrant.QaTask" hash-for-method="getReleaseInfoWikipedia(17 December 2021)">getReleaseInfoWikipedia(17 December 2021)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Movie_Information" title="com.testvagrant.QaTask" hash-for-method="searchMovieInIMDB(https://www.imdb.com/, Pushpa, Pushpa: The Rise)">searchMovieInIMDB(https://www.imdb.com/, Pushpa, Pushpa: The Rise)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Movie_Information" title="com.testvagrant.QaTask" hash-for-method="searchMovieInWikipedia(https://en.wikipedia.org/, Pushpa, Pushpa: The Rise)">searchMovieInWikipedia(https://en.wikipedia.org/, Pushpa, Pushpa: The Rise)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Movie_Information -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Movie_Information" class="panel Movie_Information">
+          <div class="suite-Movie_Information-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testvagrant.QaTask</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCountryOfOriginIMDB(India)">
+                  </a> <!-- getCountryOfOriginIMDB(India) -->
+                  <span class="method-name">getCountryOfOriginIMDB</span>
+                  <span class="parameters">(India)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCountryOriginWikipedia(India)">
+                  </a> <!-- getCountryOriginWikipedia(India) -->
+                  <span class="method-name">getCountryOriginWikipedia</span>
+                  <span class="parameters">(India)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getReleaseDateIMDB(17 December 2021)">
+                  </a> <!-- getReleaseDateIMDB(17 December 2021) -->
+                  <span class="method-name">getReleaseDateIMDB</span>
+                  <span class="parameters">(17 December 2021)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getReleaseInfoWikipedia(17 December 2021)">
+                  </a> <!-- getReleaseInfoWikipedia(17 December 2021) -->
+                  <span class="method-name">getReleaseInfoWikipedia</span>
+                  <span class="parameters">(17 December 2021)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchMovieInIMDB(https://www.imdb.com/, Pushpa, Pushpa: The Rise)">
+                  </a> <!-- searchMovieInIMDB(https://www.imdb.com/, Pushpa, Pushpa: The Rise) -->
+                  <span class="method-name">searchMovieInIMDB</span>
+                  <span class="parameters">(https://www.imdb.com/, Pushpa, Pushpa: The Rise)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchMovieInWikipedia(https://en.wikipedia.org/, Pushpa, Pushpa: The Rise)">
+                  </a> <!-- searchMovieInWikipedia(https://en.wikipedia.org/, Pushpa, Pushpa: The Rise) -->
+                  <span class="method-name">searchMovieInWikipedia</span>
+                  <span class="parameters">(https://en.wikipedia.org/, Pushpa, Pushpa: The Rise)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Movie_Information-class-passed -->
+        </div> <!-- panel Movie_Information -->
+        <div panel-name="test-xml-Movie_Information" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Javap\TestVagrant\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Movie Information&quot;&gt;
+  &lt;parameter name=&quot;IMDB Url&quot; value=&quot;https://www.imdb.com/&quot;/&gt;
+  &lt;parameter name=&quot;Wikipedia Url&quot; value=&quot;https://en.wikipedia.org/&quot;/&gt;
+  &lt;parameter name=&quot;Movie Name&quot; value=&quot;Pushpa: The Rise&quot;/&gt;
+  &lt;parameter name=&quot;Movie Search Name&quot; value=&quot;Pushpa&quot;/&gt;
+  &lt;parameter name=&quot;Country Origin&quot; value=&quot;India&quot;/&gt;
+  &lt;parameter name=&quot;Release Date&quot; value=&quot;17 December 2021&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.testvagrant.RetryTC&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MovieReleaseDateAndCountryOrigin&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;IMDB&quot;/&gt;
+        &lt;include name=&quot;Wikipedia&quot;/&gt;
+        &lt;include name=&quot;browser&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testvagrant.QaTask&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MovieReleaseDateAndCountryOrigin --&gt;
+&lt;/suite&gt; &lt;!-- Movie Information --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Movie_Information" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Movie Information</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">MovieReleaseDateAndCountryOrigin (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Movie_Information" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Movie Information</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">IMDB</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCountryOfOriginIMDB</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getReleaseDateIMDB</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchMovieInIMDB</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Wikipedia</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCountryOriginWikipedia</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getReleaseInfoWikipedia</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchMovieInWikipedia</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Movie_Information" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Movie Information</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Movie_Information');
+function tableData_Movie_Information() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchMovieInIMDB')
+data.setCell(0, 2, 'com.testvagrant.QaTask')
+data.setCell(0, 3, 20775);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchMovieInWikipedia')
+data.setCell(1, 2, 'com.testvagrant.QaTask')
+data.setCell(1, 3, 20531);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getReleaseDateIMDB')
+data.setCell(2, 2, 'com.testvagrant.QaTask')
+data.setCell(2, 3, 306);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getCountryOfOriginIMDB')
+data.setCell(3, 2, 'com.testvagrant.QaTask')
+data.setCell(3, 3, 41);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getReleaseInfoWikipedia')
+data.setCell(4, 2, 'com.testvagrant.QaTask')
+data.setCell(4, 3, 40);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getCountryOriginWikipedia')
+data.setCell(5, 2, 'com.testvagrant.QaTask')
+data.setCell(5, 3, 34);
+window.suiteTableData['Movie_Information']= { tableData: data, tableDiv: 'times-div-Movie_Information'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <div id="times-div-Movie_Information">
+              </div> <!-- times-div-Movie_Information -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Movie_Information" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Movie Information</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Movie_Information" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Movie_Information" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testvagrant.QaTask</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchIMDBPage</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">searchMovieInIMDB(https://www.imdb.com/, Pushpa, Pushpa: The Rise)</span>
+                <span class="method-start">19333 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getReleaseDateIMDB(17 December 2021)</span>
+                <span class="method-start">40114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCountryOfOriginIMDB(India)</span>
+                <span class="method-start">40421 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchMovieInWikipedia(https://en.wikipedia.org/, Pushpa, Pushpa: The Rise)</span>
+                <span class="method-start">40464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getReleaseInfoWikipedia(17 December 2021)</span>
+                <span class="method-start">60997 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCountryOriginWikipedia(India)</span>
+                <span class="method-start">61038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">61073 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

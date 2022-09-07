@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Movie Information" duration-ms="61520" started-at="2022-09-07T00:27:06Z" finished-at="2022-09-07T00:28:08Z">
+    <groups>
+      <group name="IMDB">
+        <method signature="QaTask.getCountryOfOriginIMDB(java.lang.String)[pri:3, instance:com.testvagrant.QaTask@7c729a55]" name="getCountryOfOriginIMDB" class="com.testvagrant.QaTask"/>
+        <method signature="QaTask.getReleaseDateIMDB(java.lang.String)[pri:2, instance:com.testvagrant.QaTask@7c729a55]" name="getReleaseDateIMDB" class="com.testvagrant.QaTask"/>
+        <method signature="QaTask.searchMovieInIMDB(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testvagrant.QaTask@7c729a55]" name="searchMovieInIMDB" class="com.testvagrant.QaTask"/>
+      </group> <!-- IMDB -->
+      <group name="Wikipedia">
+        <method signature="QaTask.getCountryOriginWikipedia(java.lang.String)[pri:6, instance:com.testvagrant.QaTask@7c729a55]" name="getCountryOriginWikipedia" class="com.testvagrant.QaTask"/>
+        <method signature="QaTask.getReleaseInfoWikipedia(java.lang.String)[pri:5, instance:com.testvagrant.QaTask@7c729a55]" name="getReleaseInfoWikipedia" class="com.testvagrant.QaTask"/>
+        <method signature="QaTask.searchMovieInWikipedia(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.testvagrant.QaTask@7c729a55]" name="searchMovieInWikipedia" class="com.testvagrant.QaTask"/>
+      </group> <!-- Wikipedia -->
+    </groups>
+    <test name="MovieReleaseDateAndCountryOrigin" duration-ms="61520" started-at="2022-09-07T00:27:06Z" finished-at="2022-09-07T00:28:08Z">
+      <class name="com.testvagrant.QaTask">
+        <test-method status="PASS" signature="launchIMDBPage()[pri:0, instance:com.testvagrant.QaTask@7c729a55]" name="launchIMDBPage" is-config="true" duration-ms="19203" started-at="2022-09-07T00:27:06Z" finished-at="2022-09-07T00:27:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchIMDBPage -->
+        <test-method status="PASS" signature="searchMovieInIMDB(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testvagrant.QaTask@7c729a55]" name="searchMovieInIMDB" duration-ms="20775" started-at="2022-09-07T00:27:25Z" finished-at="2022-09-07T00:27:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.imdb.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pushpa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pushpa: The Rise]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMovieInIMDB -->
+        <test-method status="PASS" signature="getReleaseDateIMDB(java.lang.String)[pri:2, instance:com.testvagrant.QaTask@7c729a55]" name="getReleaseDateIMDB" duration-ms="306" started-at="2022-09-07T00:27:46Z" finished-at="2022-09-07T00:27:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[17 December 2021]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReleaseDateIMDB -->
+        <test-method status="PASS" signature="getCountryOfOriginIMDB(java.lang.String)[pri:3, instance:com.testvagrant.QaTask@7c729a55]" name="getCountryOfOriginIMDB" duration-ms="41" started-at="2022-09-07T00:27:46Z" finished-at="2022-09-07T00:27:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCountryOfOriginIMDB -->
+        <test-method status="PASS" signature="searchMovieInWikipedia(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.testvagrant.QaTask@7c729a55]" name="searchMovieInWikipedia" duration-ms="20531" started-at="2022-09-07T00:27:47Z" finished-at="2022-09-07T00:28:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://en.wikipedia.org/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pushpa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pushpa: The Rise]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMovieInWikipedia -->
+        <test-method status="PASS" signature="getReleaseInfoWikipedia(java.lang.String)[pri:5, instance:com.testvagrant.QaTask@7c729a55]" name="getReleaseInfoWikipedia" duration-ms="40" started-at="2022-09-07T00:28:07Z" finished-at="2022-09-07T00:28:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[17 December 2021]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReleaseInfoWikipedia -->
+        <test-method status="PASS" signature="getCountryOriginWikipedia(java.lang.String)[pri:6, instance:com.testvagrant.QaTask@7c729a55]" name="getCountryOriginWikipedia" duration-ms="34" started-at="2022-09-07T00:28:07Z" finished-at="2022-09-07T00:28:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCountryOriginWikipedia -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.testvagrant.QaTask@7c729a55]" name="browserClose" is-config="true" duration-ms="434" started-at="2022-09-07T00:28:07Z" finished-at="2022-09-07T00:28:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- com.testvagrant.QaTask -->
+    </test> <!-- MovieReleaseDateAndCountryOrigin -->
+  </suite> <!-- Movie Information -->
+</testng-results>

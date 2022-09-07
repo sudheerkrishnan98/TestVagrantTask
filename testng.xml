@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Movie Information">
+<listeners> 
+<listener class-name="com.testvagrant.RetryTC"></listener>
+</listeners>
+	<parameter name="Movie Name" value="Pushpa: The Rise"></parameter>
+	<parameter name="Movie Search Name" value="Pushpa"></parameter>
+	<parameter name="Release Date" value="17 December 2021"></parameter>
+	<parameter name="Country Origin" value="India"></parameter>
+	<parameter name="IMDB Url" value="https://www.imdb.com/"></parameter>
+	<parameter name="Wikipedia Url"
+		value="https://en.wikipedia.org/"></parameter>
+	<test thread-count="5" name="MovieReleaseDateAndCountryOrigin">
+		<groups>
+			<run>
+				<include name="IMDB"></include>
+				<include name="Wikipedia"></include>
+				<include name="browser"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.testvagrant.QaTask" />
+		</classes>
+
+	</test>
+</suite>
