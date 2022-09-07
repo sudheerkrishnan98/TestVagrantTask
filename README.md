@@ -11,7 +11,7 @@
  
   Execution
   ---------------
-  You can directly execute using the testng.xml file by running it as TestNG Suite present in the target folder
+  You can directly execute using the testng.xml file by running it as TestNG Suite 
   
   
   
